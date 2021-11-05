@@ -1,0 +1,146 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/8414ac8a-22c7-40bc-af37-af517d354fca>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "List of events" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Interesting_activities" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/que-faire-a-paris-/information/?disjunctive.category&disjunctive.tags&disjunctive.address_name&disjunctive.address_zipcode&disjunctive.address_city&disjunctive.access_type&disjunctive.price_type"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/6349a3c5-dfab-4fd4-9fc5-64bd71078f6b>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "List of public bike stations in Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Public_bike_stations" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/velib-disponibilite-en-temps-reel/information/?disjunctive.name&disjunctive.is_installed&disjunctive.is_renting&disjunctive.is_returning&disjunctive.nom_arrondissement_communes"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/645da5d8-490d-41cf-9399-cd9ae8d0b608>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "this is the list of all the wi-fi hotspots in Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "PublicWi-Fihotspots"^^xsd:anyURI ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/sites-disposant-du-service-paris-wi-fi/information/?disjunctive.cp&disjunctive.etat2"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/eca42821-0890-422b-adc9-44c8e0c97a1a>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Collection of datasets regarding the city of Paris published by the city's service offices and its partners under ODbl license" ;
+        dct:identifier     "opendata.paris.fr"^^xsd:anyURI ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f8a3bcb6-e2a8-4a7b-8a7c-ac2e40e90c17> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/db13a2f3-e285-409a-98a3-e7f2ea2b8dc4> ;
+        dct:title          "Data about Paris" ;
+        dct:type           "CSV"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/47137dae-e912-4e3b-ab4a-7ecdf789487f> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/25f9edb7-cf08-4d18-bd17-14c3fe062857> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/645da5d8-490d-41cf-9399-cd9ae8d0b608> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/b8e11a87-7465-417a-a390-8a007956e6a5> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/20d106e8-f8a7-4175-84bc-25266e81776e> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/6349a3c5-dfab-4fd4-9fc5-64bd71078f6b> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/3d548abd-5cd9-45c0-b816-2af133c81f5b> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/49f1a649-12fa-487c-8ee8-08fd6e22f896> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/ddeea1ee-7670-4764-b504-a2e5138a25eb> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/8414ac8a-22c7-40bc-af37-af517d354fca> ;
+        dcat:keyword       "Events" , "Cycling Tracks" , "Green Areas" , "Point of Interest" ;
+        dcat:landingPage   "https://opendata.paris.fr/page/home/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/f08743d1-6f7b-46a0-ad94-965c646ba385> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/f08743d1-6f7b-46a0-ad94-965c646ba385>
+        rdf:type         skos:Concept ;
+        skos:definition  "a location identifies a place in space" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/8b94b00d-d86a-499a-92a0-c9cf1ad7f405> ;
+        skos:prefLabel   "location" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/20d106e8-f8a7-4175-84bc-25266e81776e>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "this is the list of all the pedestrian areas in Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Pedestrian Areas" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/aires-pietonnes/information/"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/25f9edb7-cf08-4d18-bd17-14c3fe062857>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "the list of open and green areas managed by the city of Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Green_areas_and_similar" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/espaces_verts/information/?disjunctive.type_ev&disjunctive.categorie&disjunctive.adresse_codepostal&disjunctive.presence_cloture"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/49f1a649-12fa-487c-8ee8-08fd6e22f896>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "list of the outdoors market that are present in Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Open_air_markets"^^xsd:anyURI ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/marches-decouverts/information/?disjunctive.produit&disjunctive.ardt&disjunctive.jours_tenue&disjunctive.gestionnaire"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/47137dae-e912-4e3b-ab4a-7ecdf789487f>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "webpage" ;
+        schema:name         "https://opendata.paris.fr/pages/contact/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/3d548abd-5cd9-45c0-b816-2af133c81f5b>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "Great source for Paris hidden gems." ;
+        dct:format       "CSV" ;
+        dct:identifier   "Unusual_walks_and_poi" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/paris-autrement-balades-dans-les-arrondissements-peripheriques-poi/information/?disjunctive.code_postal&disjunctive.parcours&disjunctive.categorie&disjunctive.mot_cle"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/b8e11a87-7465-417a-a390-8a007956e6a5>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "List of cycling tracks in Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Cycling_tracks" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/reseau-cyclable/information/?disjunctive.typologie_simple&disjunctive.bidirectionnel&disjunctive.statut&disjunctive.sens_velo&disjunctive.voie&disjunctive.arrdt&disjunctive.bois&disjunctive.position&disjunctive.circulation&disjunctive.piste&disjunctive.couloir_bus&disjunctive.type_continuite&disjunctive.reseau"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/8b94b00d-d86a-499a-92a0-c9cf1ad7f405>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "a location is defined by a latitude and longitude\t" ;
+        dct:title        "lat/lon" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/f8a3bcb6-e2a8-4a7b-8a7c-ac2e40e90c17>
+        rdf:type           schema:Organization ;
+        schema:identifier  "Paris Service Offices" ;
+        schema:legalName   "Paris Open Data" ;
+        schema:leiCode     "null" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/ddeea1ee-7670-4764-b504-a2e5138a25eb>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "Paris ODbl" ;
+        dct:description  "The list of public taxi stations available in Paris" ;
+        dct:format       "CSV" ;
+        dct:identifier   "Taxi_stations" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://opendata.paris.fr/explore/dataset/bornes-dappel-taxi/information/?disjunctive.code_postal"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/db13a2f3-e285-409a-98a3-e7f2ea2b8dc4>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(2.164306640625 49.0378679453261)"^^gsp:wktLiteral .

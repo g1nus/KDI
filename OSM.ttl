@@ -1,0 +1,120 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/66a64383-dab9-48b0-9432-e29aa99a0001>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "OSM ODbl" ;
+        dct:description  "The list restaurants in Paris" ;
+        dct:format       "geojson" ;
+        dct:identifier   "restaurants" ;
+        dct:type         "geojson"^^xsd:anyURI ;
+        dcat:accessURL   "https://overpass-turbo.eu/s/1cHk"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/3ea4f821-db6f-4176-857d-199c65095716>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "OSM ODbl" ;
+        dct:description  "A list of other kind of places that can be useful for tourists" ;
+        dct:format       "geojson" ;
+        dct:identifier   "Other points of interest" ;
+        dct:type         "geojson"^^xsd:anyURI ;
+        dcat:accessURL   "https://overpass-turbo.eu/s/1cJD"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/0411cabe-aeba-4297-8364-ad7152086ea0>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "OSM ODbl" ;
+        dct:description  "The list of subway stops in Paris" ;
+        dct:format       "geojson" ;
+        dct:identifier   "subway_station" ;
+        dct:type         "geojson"^^xsd:anyURI ;
+        dcat:accessURL   "https://overpass-turbo.eu/s/1cJC"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/eca42821-0890-422b-adc9-44c8e0c97a1a>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Open collection of data regarding any location and point of interest in the world" ;
+        dct:identifier     "www.openstreetmap.org" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f8a3bcb6-e2a8-4a7b-8a7c-ac2e40e90c17> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/db13a2f3-e285-409a-98a3-e7f2ea2b8dc4> ;
+        dct:title          "Openstreetmap Data" ;
+        dct:type           "CSV"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/47137dae-e912-4e3b-ab4a-7ecdf789487f> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/3ea4f821-db6f-4176-857d-199c65095716> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/25f9edb7-cf08-4d18-bd17-14c3fe062857> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/0411cabe-aeba-4297-8364-ad7152086ea0> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/8ab641cc-e0df-4e1f-86b5-ff9220fc274c> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/8b5f76ba-ca54-48a3-bdb4-10fc8515101b> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/66a64383-dab9-48b0-9432-e29aa99a0001> ;
+        dcat:keyword       "Crowdsourced" , "Point of Interest" , "Streets" ;
+        dcat:landingPage   "https://opendata.paris.fr/page/home/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/f08743d1-6f7b-46a0-ad94-965c646ba385> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/f08743d1-6f7b-46a0-ad94-965c646ba385>
+        rdf:type         skos:Concept ;
+        skos:definition  "a location identifies a place in space" ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/8b94b00d-d86a-499a-92a0-c9cf1ad7f405> ;
+        skos:prefLabel   "location" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/8ab641cc-e0df-4e1f-86b5-ff9220fc274c>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "OSM ODbl" ;
+        dct:description  "The list of bus stops in Paris" ;
+        dct:format       "geojson" ;
+        dct:identifier   "bus_station" ;
+        dct:type         "geojson"^^xsd:anyURI ;
+        dcat:accessURL   "https://overpass-turbo.eu/s/1cHl"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/25f9edb7-cf08-4d18-bd17-14c3fe062857>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "OSM ODbl" ;
+        dct:description  "The list of malls and department stores in Paris" ;
+        dct:format       "geojson" ;
+        dct:identifier   "Shopping_center" ;
+        dct:type         "geojson"^^xsd:anyURI ;
+        dcat:accessURL   "https://overpass-turbo.eu/s/1cHj"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/47137dae-e912-4e3b-ab4a-7ecdf789487f>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "email" ;
+        schema:email        "operations@osmfoundation.org" ;
+        schema:name         "openstreetmap email contact" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/8b94b00d-d86a-499a-92a0-c9cf1ad7f405>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "a location is defined by a latitude and longitude\t" ;
+        dct:title        "lat/lon" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/f8a3bcb6-e2a8-4a7b-8a7c-ac2e40e90c17>
+        rdf:type           schema:Organization ;
+        schema:identifier  "Openstreetmap headquarters" ;
+        schema:legalName   "Open Street Map" ;
+        schema:leiCode     "null" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/db13a2f3-e285-409a-98a3-e7f2ea2b8dc4>
+        rdf:type       dct:Location ;
+        locn:geometry  "POINT(0.2684783935546875 52.41666021079303)"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/8b5f76ba-ca54-48a3-bdb4-10fc8515101b>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "OSM ODbl" ;
+        dct:description  "The list of ATMs in Paris" ;
+        dct:format       "geojson" ;
+        dct:identifier   "ATM" ;
+        dct:type         "geojson"^^xsd:anyURI ;
+        dcat:accessURL   "https://overpass-turbo.eu/s/1cHi"^^xsd:anyURI .
