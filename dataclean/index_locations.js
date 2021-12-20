@@ -443,7 +443,7 @@ function extractHoursMarkets(market, id) {
         id: uuidv4(),
         establishmentId: id,
         day: day,
-        rom: market.h_deb_sam,
+        from: market.h_deb_sam,
         to: market.h_fin_sam
       })
     }else{
@@ -545,7 +545,7 @@ let cinemaClean = cinema.map(cnm => {
     locationId: locationID
   })
   if(cnm.properties.opening_hours && cnm.properties.opening_hours != "closed"){
-    getHoursOSM(cnm.properties.opening_hours, elementID)
+    getHoursOSM(cnm.properties.opening_hours, establishmentID)
   }
   
   return {
@@ -580,7 +580,7 @@ let museumClean = museum.map(msm => {
     locationId: locationID
   })
   if(msm.properties.opening_hours && msm.properties.opening_hours != "closed"){
-    getHoursOSM(msm.properties.opening_hours, elementID)
+    getHoursOSM(msm.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -615,7 +615,7 @@ let cafeClean = cafe.map((cf, idx) => {
     locationId: locationID
   })
   if(cf.properties.opening_hours && cf.properties.opening_hours != "closed"){
-    getHoursOSM(cf.properties.opening_hours, elementID)
+    getHoursOSM(cf.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -652,7 +652,7 @@ let barClean = bar.map((br) => {
     locationId: locationID
   })
   if(br.properties.opening_hours && br.properties.opening_hours != "closed"){
-    getHoursOSM(br.properties.opening_hours, elementID)
+    getHoursOSM(br.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -689,7 +689,7 @@ let shoppingCentreClean = shoppingCentre.map((sc) => {
     locationId: locationID
   })
   if(sc.properties.opening_hours && sc.properties.opening_hours != "closed"){
-    getHoursOSM(sc.properties.opening_hours, elementID)
+    getHoursOSM(sc.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -725,7 +725,7 @@ let restaurantClean = restaurant.map((rsnt) => {
     locationId: locationID
   })
   if(rsnt.properties.opening_hours && rsnt.properties.opening_hours != "closed"){
-    getHoursOSM(rsnt.properties.opening_hours, elementID)
+    getHoursOSM(rsnt.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -762,7 +762,7 @@ let bakeryClean = bakery.map((bkr) => {
     locationId: locationID
   })
   if(bkr.properties.opening_hours && bkr.properties.opening_hours != "closed"){
-    getHoursOSM(bkr.properties.opening_hours, elementID)
+    getHoursOSM(bkr.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -796,7 +796,7 @@ let pharmacyClean = pharmacy.map((pmc) => {
     locationId: locationID
   })
   if(pmc.properties.opening_hours && pmc.properties.opening_hours != "closed"){
-    getHoursOSM(pmc.properties.opening_hours, elementID)
+    getHoursOSM(pmc.properties.opening_hours, establishmentID)
   }
 
   return {
@@ -829,7 +829,7 @@ let oamClean = oam.map(market => {
     name: market.fields.nom_long || "no name",
     locationId: locationID
   })
-  extractHoursMarkets(market.fields, elementID)
+  extractHoursMarkets(market.fields, establishmentID)
 
   return {
     id: elementID,
